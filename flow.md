@@ -29,3 +29,36 @@ npm run flow init
 ```shell
 npm run flow
 ```
+
+
+## 使用babel对flow代码进行转码
+
+如果给数据添加类型声明是通过第二种方式, 直接修改js代码, 那么代码是不能正常运行的 
+
+我们需要通过babel对代码进行转码之后才能正常运行
+
+1. 安装babel 以及 presets
+```shell
+npm i babel-cli babel-preset-flow -D
+```
+
+2. 配置package,json添加build命令调用babel
+```json
+"scripts": {
+  "build": "babel ./src -d ./dist"
+}
+```
+3. 执行build命令对文件进行转换
+
+
+
+
+
+
+
+
+
+
+
+
+
